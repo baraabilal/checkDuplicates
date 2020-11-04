@@ -29,7 +29,7 @@ def printDuplicates(array, Col):
         progress = 0
         for i in range(len(array)):
 
-            print(progress) #Uncomment for progress (This runs in O(n^2) which requires some time) remind me to implement faster algorithm
+            #print(progress) #Uncomment for progress (This runs in O(n^2) which requires some time) remind me to implement faster algorithm
             progress=progress+1
 
             count = 0
