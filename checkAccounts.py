@@ -24,7 +24,20 @@ def printDuplicates(array, Col):
     if checkIfDuplicates(array) == False:
         return False
     else:
-        import collections
-        print([item for item, count in collections.Counter(Col).items() if count > 1])
 
+        dup =[]
+        progress = 0
+        for i in range(len(array)):
 
+            print(progress) #Uncomment for progress (This runs in O(n^2) which requires some time) remind me to implement faster algorithm
+            progress=progress+1
+
+            count = 0
+            for j in range(len(array)):
+                if array[i] == array[j]:
+                    count = count + 1 
+        
+            if count > 1:
+                dup.append(array[i])
+        
+        return(dup)
